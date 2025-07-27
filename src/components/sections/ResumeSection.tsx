@@ -13,9 +13,9 @@ export const ResumeSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl font-bold glow-text mb-4">Resume</h2>
-          <p className="text-xl text-muted-foreground">
-            My professional journey through the digital universe
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold sharp-text mb-4">Resume</h2>
+          <p className="text-lg font-inter text-muted-foreground">
+            Professional experience and technical expertise
           </p>
         </motion.div>
 
@@ -25,9 +25,9 @@ export const ResumeSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-4xl mx-auto"
         >
-          <Card className="glass-card cosmic-border">
+          <Card className="glass-card professional-border">
             <CardHeader className="text-center">
-              <CardTitle className="flex items-center justify-center gap-3 text-2xl">
+              <CardTitle className="flex items-center justify-center gap-3 text-2xl font-playfair">
                 <FileText className="w-8 h-8 text-primary" />
                 Professional Resume
               </CardTitle>

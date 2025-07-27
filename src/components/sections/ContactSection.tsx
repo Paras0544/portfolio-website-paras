@@ -69,9 +69,9 @@ export const ContactSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl font-bold glow-text mb-4">Contact</h2>
-          <p className="text-xl text-muted-foreground">
-            Ready to embark on a cosmic collaboration?
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold sharp-text mb-4">Contact</h2>
+          <p className="text-lg font-inter text-muted-foreground">
+            Let's discuss your next project
           </p>
         </motion.div>
 
@@ -82,9 +82,9 @@ export const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Card className="glass-card cosmic-border">
+            <Card className="glass-card professional-border">
               <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-2xl">
+                <CardTitle className="flex items-center gap-3 text-2xl font-playfair">
                   <MessageSquare className="w-7 h-7 text-primary" />
                   Send Message
                 </CardTitle>
@@ -159,9 +159,9 @@ export const ContactSection = () => {
             className="space-y-8"
           >
             {/* Social Links */}
-            <Card className="glass-card cosmic-border">
+            <Card className="glass-card professional-border">
               <CardHeader>
-                <CardTitle className="text-xl">Connect with me</CardTitle>
+                <CardTitle className="text-xl font-playfair">Connect with me</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-col space-y-4">
@@ -173,7 +173,7 @@ export const ContactSection = () => {
                         href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex items-center gap-4 p-3 rounded-lg bg-background/30 border border-primary/20 transition-all duration-300 hover:border-primary/50 hover:bg-background/50 ${link.color}`}
+                        className={`flex items-center gap-4 p-3 rounded-lg bg-background/30 border border-border transition-all duration-300 hover:border-primary/50 hover:bg-background/50 font-inter ${link.color}`}
                       >
                         <Icon className="w-6 h-6" />
                         <span className="font-medium">{link.name}</span>
@@ -185,15 +185,15 @@ export const ContactSection = () => {
             </Card>
 
             {/* Quick Info */}
-            <Card className="glass-card cosmic-border">
+            <Card className="glass-card professional-border">
               <CardHeader>
-                <CardTitle className="text-xl">Let's Build Something Amazing</CardTitle>
+                <CardTitle className="text-xl font-playfair">Let's Build Something Amazing</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
+                <p className="font-inter text-muted-foreground">
                   I'm always excited to work on new projects and collaborate with fellow developers, designers, and innovators.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="font-inter text-muted-foreground">
                   Whether you have a project in mind, want to discuss opportunities, or just want to say hello, feel free to reach out!
                 </p>
               </CardContent>

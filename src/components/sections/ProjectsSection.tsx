@@ -104,9 +104,9 @@ export const ProjectsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl font-bold glow-text mb-4">Projects</h2>
-          <p className="text-xl text-muted-foreground">
-            Exploring the cosmos of code and creativity
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold sharp-text mb-4">Projects</h2>
+          <p className="text-lg font-inter text-muted-foreground">
+            A collection of professional work and technical achievements
           </p>
         </motion.div>
 
@@ -120,10 +120,10 @@ export const ProjectsSection = () => {
               {projectCategories.map((category) => {
                 const Icon = category.icon;
                 return (
-                  <TabsTrigger 
-                    key={category.id} 
-                    value={category.id}
-                    className="flex items-center gap-2 data-[state=active]:bg-primary/20"
+                    <TabsTrigger 
+                      key={category.id} 
+                      value={category.id}
+                      className="flex items-center gap-2 font-inter data-[state=active]:bg-primary/10"
                   >
                     <Icon className="w-4 h-4" />
                     {category.label}
@@ -142,12 +142,12 @@ export const ProjectsSection = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
-                      <Card className="glass-card cosmic-border hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 group">
+                      <Card className="glass-card professional-border hover:shadow-xl transition-all duration-300 group">
                         <CardHeader>
-                          <CardTitle className="text-primary group-hover:text-accent transition-colors">
+                          <CardTitle className="font-playfair text-primary group-hover:text-accent transition-colors">
                             {project.name}
                           </CardTitle>
-                          <CardDescription className="text-muted-foreground">
+                          <CardDescription className="font-inter text-muted-foreground">
                             {project.description}
                           </CardDescription>
                         </CardHeader>

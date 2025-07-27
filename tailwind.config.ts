@@ -52,8 +52,8 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				cosmic: 'var(--gradient-cosmic)',
-				nebula: 'var(--gradient-nebula)',
+				cosmic: 'var(--gradient-primary)',
+				professional: 'var(--gradient-primary)',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -66,9 +66,9 @@ export default {
 				}
 			},
 			fontFamily: {
-				'orbitron': ['Orbitron', 'sans-serif'],
-				'exo': ['Exo 2', 'sans-serif'],
-				'space-mono': ['Space Mono', 'monospace'],
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'mono': ['JetBrains Mono', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
