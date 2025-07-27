@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { SpaceBackground } from '@/components/SpaceBackground';
+import { Navigation } from '@/components/Navigation';
+import { HeroSection } from '@/components/sections/HeroSection';
+import { ProjectsSection } from '@/components/sections/ProjectsSection';
+import { ResumeSection } from '@/components/sections/ResumeSection';
+import { ContactSection } from '@/components/sections/ContactSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="relative">
+      {/* Animated Space Background */}
+      <SpaceBackground />
+      
+      {/* Navigation */}
+      <Navigation />
+      
+      {/* Main Content */}
+      <main className="relative z-10">
+        <HeroSection />
+        <ProjectsSection />
+        <ResumeSection />
+        <ContactSection />
+      </main>
     </div>
   );
 };
