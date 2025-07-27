@@ -11,7 +11,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="space-y-4"
         >
-          <h1 className="text-6xl md:text-8xl font-bold glow-text animate-glow">
+          <h1 className="text-6xl md:text-8xl font-orbitron font-black glow-text animate-glow tracking-wider">
             Paras Miglani
           </h1>
           
